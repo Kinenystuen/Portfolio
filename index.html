@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Kine Odden Nystuen</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="module" src="/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/c4698ad2a1.js" crossorigin="anonymous"></script>
+    <meta name="author" content="Kine Odden Nystuen">
+    <meta name="Keywords" content="Front-end utvikling">
+    <meta name="describtion" content="Portfolio Kine Odden Nystuen">
+    <link rel="icon" href="/images/logo_mountain.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="headerHomepage">
+        <div class="headerHome">
+            <a class="logo-area" href="/">
+                <p class="logo-area_title">Kine Odden Nystuen</p>
+            </a>
+            <button class="hamburger_icon pointer" aria-expanded="false" title="Nav menu button"></button>
+            <nav class="nav-menu" data-visible="false">
+                <ul class="nav-menu-ul">
+                    <li>
+                        <a class="nav-menu-a" href="#myProjects">Mine prosjekter</a>
+                    </li>
+                    <li>
+                        <a class="nav-menu-a" href="#aboutMe">Om meg</a>
+                    </li>
+                    <li>
+                        <a class="nav-menu-a" href="#contactMe">Kontakt meg</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="fitPage">
+        <div class="headerContainer bgWhite">
+            <div class="portfolieTitle">
+                <h1 class="uppercase">Portfolio</h1>
+                <div class="line"></div>
+                <h2>Kine Odden Nystuen</h2>
+            </div>
+            <div class="portfolioImgArea">
+                <img class="portfolioImg" src="/img/Bilde Kine.jpg" alt="Image of Kine">
+            </div>
+        </div>
+        <section class=" padding2remTB " id="myProjects">
+            <div class="content_wrap">
+                <h2>Mine prosjekter</h2>
+                <div class="line"></div>
+                <div class="carousel-container">
+                    <div class="grid200" style="transform: translateX(0px);"><a class="cardLink carousel-card"
+                            href="https://mountaintime.netlify.app/" style="flex: 0 0 calc(25% - 1.25rem);"><img
+                                src="/img/Mountain_life.png" alt="Image for Mountain Life website" class="carousel-img">
+                            <h3 class="carousel-title">Mountain Life - Project exam 1</h3>
+                        </a><a class="cardLink carousel-card" href="https://sciencemuseumsp1.netlify.app/"
+                            style="flex: 0 0 calc(25% - 1.25rem);"><img src="/img/CSM_semester_project.png"
+                                alt="Image for Community Science Museum website - semester project 1"
+                                class="carousel-img">
+                            <h3 class="carousel-title">Community Science Museum - Semester project 1</h3>
+                        </a><a class="cardLink carousel-card" href="https://squareeyes-id.netlify.app/"
+                            style="flex: 0 0 calc(25% - 1.25rem);"><img src="/img/Square_eyes_pro.png"
+                                alt="Image for Square Eyes website" class="carousel-img">
+                            <h3 class="carousel-title">Square Eyes - Interaction design project</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" padding2remTB" id="aboutMe">
+            <div class="flexCenterRow content_wrap">
+                <div class="portfolioImgArea">
+                    <img class="portfolioImg" src="/img/IMG_20180221_141251.jpg" alt="Image Kine">
+                </div>
+                <div class="flex1 padding1rem">
+                    <h2 class="uppercase">Om meg</h2>
+                    <div class="line"></div>
+                    <div class="flex-start-center-column">
+                        <div class="">
+                            <p><span class="bold">Kommer fra:</span> Folldal</p>
+                            <p><span class="bold">Født:</span> 1998</p>
+                        </div>
+                        <div class="">
+                            <p class="bold">Nåværende utdanning:</p>
+                            <p>Front-end utvikling ved Noroff</p>
+                        </div>
+                        <div>
+                            <p class="bold">Tidligere utdanning:</p>
+                            <p>Bachelor i landskapsplanlegging med landskapsarkitektur - Høgskulen på Vestlandet</p>
+                            <p>Årsstudie i reiselivsledelse - Høgskulen på Vestlandet</p>
+                            <p>Studiespesialiserende med formgiving - Elverum videregående skole</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="flexcenter back bgDarkBlue padding1rem" id="contactMe">
+            <div class="contactMe">
+                <h2>Kontakt meg</h2>
+                <p>Mobil: +47 90361559</p>
+                <p>Email: Kine_on@hotmail.com</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="flexcenter height-fit-content ">
+            <p>Portfolio</p>
+            <a class="footer_logo" href="/index.html">
+                <p class="logo-area_title">Kine Odden Nystuen</p>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

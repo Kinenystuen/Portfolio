@@ -1,0 +1,33 @@
+.fontSize08 {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+/* width */
+.width100 {
+    width: 100%;
+}
+.teAlign {
+    text-align: end;
+}
+
+.caption {
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+.cursive {
+    font-style: italic;
+    font-size: 0.9rem;
+}
+.fw-light {
+    font-size: 0.8rem;
+    font-weight: 400;
+    font-style: italic;
+}
+.bold {
+    font-weight: 600;
+}
+.uppercase {
+    text-transform: uppercase;
+}

@@ -1,0 +1,98 @@
+/* 
+-------------------
+11. Flex and grids
+-------------------
+*/
+
+/* Flex */
+.flex {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: start;
+    width: 100%;
+}
+.flexCenterRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-start-center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start ;
+    gap: 0.5rem;
+}
+.flex-end-center {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.flex_spacebetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.flexCR {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.flexcenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.flex1 {
+    flex:1;
+}
+.flex2 {
+    flex:2;
+}
+
+/* Grids */
+/* Used for blog posts, and sel post site */
+.grid200 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+.grid400 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
+}
+.grid400-fill {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    gap: 1rem;
+}
+
+
+/* CSS for Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+}
+
+/* CSS for Gallery Image */
+.blogCard-images {
+    width: 100%;
+    height: auto;
+    max-height: calc(var(--vh, 1vh) * 50);
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.blogCard-images:hover {
+    transform: scale(1.02);
+}
+

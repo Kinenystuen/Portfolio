@@ -1,0 +1,60 @@
+/* 
+-------------------
+8. Padding + margin + gap selectors
+-------------------
+*/
+/* Padding */
+
+    .zeropadding {
+        padding: 0px;
+    }
+    .padding-top2rem {
+        padding-top: 2rem;
+    }
+    .padding_top1rem {
+        padding-top: 1rem;  
+    }
+    .padding1rem {
+        padding: 1rem;
+    }
+    
+    .padding2remTB {
+        padding: 2rem 0;
+    }
+    .section_padding {
+        padding: 1rem 0 3rem;
+    }
+    
+    
+
+/* Margin */
+    .margin1rem {
+        margin: 1rem;
+    }   
+    .marginauto {
+        margin: auto;
+    }
+    .margin_bottom2rem {
+        margin-bottom: 4rem;
+    }
+    .margintop3rem {
+        margin-top: 3rem;
+    }
+
+/* Gap */
+    .gap1rem {
+        gap: 1rem;
+    }
+
+/* height */
+
+.height-fit-content {
+    height: fit-content;  
+}
+
+/* width */
+.maxWidth800 {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
