@@ -19,3 +19,7 @@
 .bgDarkBrown {
     background-color: var(--dark_brown);
 }
+
+.Tcreamwhite {
+    color: var(--creamwhite);
+}
