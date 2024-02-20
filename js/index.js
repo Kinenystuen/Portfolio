@@ -1,7 +1,12 @@
 
 import { dropdownMenu } from "./buttons/hamburger.js";
-
 import { scrollheader } from "./render/scroll.js";
+
+import { displayPortfolio } from "./display/portfolioDisplay.js";
+
+
+
+
 
 // Fix vh 
 window.addEventListener('resize', () => {

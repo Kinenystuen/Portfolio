@@ -13,5 +13,8 @@
 @import url(/css/_about.css);
 @import url(/css/_colors.css);
 
+/* New imports */
+@import url(/css/_portfolioCard.css);
+
 /* media queries import has to be at the bottom to work */
 @import url(/css/_media_queries.css);
