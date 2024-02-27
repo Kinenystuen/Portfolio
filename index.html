@@ -10,20 +10,22 @@
     <script src="https://kit.fontawesome.com/c4698ad2a1.js" crossorigin="anonymous"></script>
     <meta name="author" content="Kine Odden Nystuen">
     <meta name="Keywords" content="Front-end utvikling">
-    <meta name="describtion" content="Portfolio Kine Odden Nystuen">
-    <link rel="icon" href="/images/logo_mountain.png" type="image/x-icon">
+    <meta name="description" content="Portfolio Kine Odden Nystuen">
+    <link rel="icon" href="" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
     <header class="headerHomepage">
         <div class="headerHome">
             <a class="logo-area" href="/">
-                <p class="logo-area_title">Kine Odden Nystuen</p>
+                <img class="logo_site" src="/img/logo_portfolio.png" alt="Logo of a button">
+                <p class="logo-area_title">KON</p>
             </a>
             <button class="hamburger_icon pointer" aria-expanded="false" title="Nav menu button"></button>
             <nav class="nav-menu" data-visible="false">
@@ -45,79 +47,117 @@
         </div>
     </header>
     <main class="fitPage">
-        <div class="headerContainer bgWhite">
-            <div class="portfolieTitle">
-                <h1 class="uppercase">Portfolio</h1>
-                <div class="line"></div>
-                <h2>Kine Odden Nystuen</h2>
-            </div>
-            <div class="portfolioImgArea">
-                <!-- <img class="portfolioImg" src="/img/Bilde Kine.jpg" alt="Image of Kine"> -->
+        <div class="headerContainer">
+            <div class="headerImg"></div>
+            <div class="floating">
+                <div class="portfolieTitle hiddenElement">
+                    <p class="firaCode margin0">Hi, I'm</p>
+                    <h1 class="headerTitle">Kine</h1>
+                    <p class="firaCode margin0">a Front-end Developer student</p>
+                </div>
             </div>
         </div>
-        <section class="content_wrap padding2remTB" id="sectionPortfolioCards">
-            <div class="grid200" id="portfolioContainer">
-
-            </div>
-        </section>
-        <section class=" padding2remTB " id="myProjects">
-            
+        <button id="darkLightMode">Dark/light</button>
+        <section id="aboutMe" class="bgBlackLighter padding1rem hiddenElement">
             <div class="content_wrap">
-                <h2>Mine prosjekter</h2>
-                <div class="line"></div>
-                
-                <div class="carousel-container">
-                    <div class="grid200" style="transform: translateX(0px);">
-                        <a class="cardLink carousel-card"
-                            href="https://mountaintime.netlify.app/" style="flex: 0 0 calc(25% - 1.25rem);">
-                            <img src="/img/Mountain_life.png" alt="Image for Mountain Life website" class="carousel-img">
-                            <h3 class="carousel-title">Mountain Life - Project exam 1</h3>
-                        </a><a class="cardLink carousel-card" href="https://sciencemuseumsp1.netlify.app/"
-                            style="flex: 0 0 calc(25% - 1.25rem);"><img src="/img/CSM_semester_project.png"
-                                alt="Image for Community Science Museum website - semester project 1"
-                                class="carousel-img">
-                            <h3 class="carousel-title">Community Science Museum - Semester project 1</h3>
-                        </a><a class="cardLink carousel-card" href="https://squareeyes-id.netlify.app/"
-                            style="flex: 0 0 calc(25% - 1.25rem);"><img src="/img/Square_eyes_pro.png"
-                                alt="Image for Square Eyes website" class="carousel-img">
-                            <h3 class="carousel-title">Square Eyes - Interaction design project</h3>
-                        </a>
+                <h2 class="sectionTitle">About Me</h2>
+                <div class="flex padding25remB">
+                    <img class="aboutMeImg" src="/img/Bilde Kine.jpg" alt="Image of Kine">
+                    <div class="">
+                        <p class="firaCode">name: "Kine",</p>
+                        <p class="firaCode">born: 1998,</p>
+                        <p class="firaCode">from: "Folldal, living in Trondheim",</p>
+                        <p class="firaCode">education: "Studying Front-End Development at Noroff",</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class=" padding2remTB bgWhite" id="aboutMe">
-            <div class="flexCenterRow content_wrap">
-                <div class="portfolioImgArea">
-                    <img class="portfolioImg" src="/img/IMG_20180221_141251.jpg" alt="Image Kine">
+        <section class="content_wrap hiddenElement padding2remTB margin_bottom2rem" id="sectionPortfolioCards">
+            <h2 class="sectionTitle">My projects</h2>
+            <div class="grid200" id="portfolioContainer" >
+                <div class="loaderArea">
+                    <div class="loader"></div>
                 </div>
-                <div class="flex1 padding1rem">
-                    <h2 class="uppercase">Om meg</h2>
-                    <div class="line"></div>
-                    <div class="flex-start-center-column">
-                        <div class="">
-                            <p><span class="bold">Kommer fra:</span> Folldal</p>
-                            <p><span class="bold">Født:</span> 1998</p>
-                        </div>
-                        <div class="">
-                            <p class="bold">Nåværende utdanning:</p>
-                            <p>Front-end utvikling ved Noroff</p>
-                        </div>
-                        <div>
-                            <p class="bold">Tidligere utdanning:</p>
-                            <p>Bachelor i landskapsplanlegging med landskapsarkitektur - Høgskulen på Vestlandet</p>
-                            <p>Årsstudie i reiselivsledelse - Høgskulen på Vestlandet</p>
-                            <p>Studiespesialisering med formgiving - Elverum videregående skole</p>
+            </div>
+        </section>
+        <section id="sectionContact">
+            <div class="content_wrap">
+                <h2 class="sectionTitle">Contact me</h2>
+                <div class="formContainer">
+                    <form action="https://formspree.io/f/xrgnqyyl" method="POST" class="contactForm" id="contactForm">
+                        <fieldset>
+                            <legend>
+                                <h2>Contact form</h2>
+                            </legend>
+                            <div class="formFill formFill-name">
+                                <label class="form-label" for="name">
+                                    <span>Full name</span>
+                                    <span class="instruction">(Minimum 5 characters)</span>
+                                    <span class="validIcon validIcon-name" data-visible="false">
+                                        <i class="fa-solid fa-circle-check" style="color: #7da87b;"></i>
+                                    </span>
+                                </label>
+                                <input class="form-input" type="text" id="name" name="name" placeholder="Full name">
+                                <div id="name-error" class="formError">Please enter your name. Minimum 5 characters.</div>
+                            </div>
+    
+                            <div class="formFill formFill-email">
+                                <label class="form-label" for="email">
+                                    <span>E-mail</span>
+                                    <span class="instruction">(Valid e-mail required)</span>
+                                    <span class="validIcon validIcon-email" data-visible="false">
+                                        <i class="fa-solid fa-circle-check" style="color: #7da87b;"></i>
+                                    </span>
+                                </label>
+                                <input class="form-input" type="email" id="email" name="email" placeholder="E-mail">
+                                <div class="formError" id="email-error">Please enter a valid e-mail.</div>
+                            </div>
+    
+                            <div class="formFill formFill-subject">
+                                <label class="form-label" for="subject">
+                                    <span>Subject</span>
+                                    <span class="instruction">(Minimum 15 characters)</span>
+                                    <span class="validIcon validIcon-subject" data-visible="false">
+                                        <i class="fa-solid fa-circle-check" style="color: #7da87b;"></i>
+                                    </span>
+                                </label>
+                                <input class="form-input" type="text" id="subject" name="subject" placeholder="Subject">
+                                <div class="formError" id="subject-error">Please enter a subject. More than 15 characters.
+                                </div>
+                            </div>
+    
+                            <div class="formFill formFill-message">
+                                <label class="form-label" for="message">
+                                    <span>Message</span>
+                                    <span class="instruction">(Minimun 25 characters)</span>
+                                    <span class="validIcon validIcon-message" data-visible="false">
+                                        <i class="fa-solid fa-circle-check" style="color: #7da87b;"></i>
+                                    </span>
+                                </label>
+                                <textarea class="form-textarea" id="message" name="message" rows="10"
+                                    placeholder="Type your message.." title="Message input"></textarea>
+                                <div class="formError" id="message-error">Your message must be minimum 25 characters long.
+                                </div>
+                            </div>
+                            <div class="sendButtonArea">
+                                <button class="sendButton">Send message</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div class="sendMessageContainer">
+                        <div class="sendMessageSuccess">
+                            <div>
+                                <h3>Your message was sent.</h3>
+                                <p>Thank you for showing interest in my blog. I will be in contact with you shortly.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="flexcenter back bgDarkBlue padding1rem" id="contactMe">
-            <div class="contactMe">
-                <h2>Kontakt meg</h2>
-                <p>Mobil: +47 90361559</p>
-                <p>Email: Kine_on@hotmail.com</p>
+        <section id="mySkills">
+            <div class="content_wrap">
+                <h2 class="sectionTitle">My Skills</h2>
             </div>
         </section>
     </main>
@@ -125,7 +165,7 @@
         <div class="flexcenter height-fit-content ">
             <p>Portfolio</p>
             <a class="footer_logo" href="/index.html">
-                <p class="logo-area_title Tcreamwhite">Kine Odden Nystuen</p>
+                <img class="logo_site" src="/img/logo_portfolio.png" alt="Logo of a button">
             </a>
         </div>
     </footer>

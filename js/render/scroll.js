@@ -18,6 +18,7 @@ if (document.querySelector(".headerContainer")) {
 }
 
 
+
 // /* Nav scroll - change active nav item */
 // const navHome = document.getElementById("home");
 // const navProjects = document.getElementById("myProjects");

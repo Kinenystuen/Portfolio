@@ -2,7 +2,11 @@
 import { dropdownMenu } from "./buttons/hamburger.js";
 import { scrollheader } from "./render/scroll.js";
 
+import { fetchPortfolioData } from "./api/fetchPortfolioData.js";
 import { displayPortfolio } from "./display/portfolioDisplay.js";
+
+import { toggleInfo } from "./render/toggle.js";
+import { toggleDarkLight } from "./render/toggle.js";
 
 
 
@@ -14,3 +18,17 @@ window.addEventListener('resize', () => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
   });
+
+
+  const observer = new IntersectionObserver((objects) => {
+    objects.forEach((object) => {
+        if (object.isIntersecting) {
+            object.target.classList.add(`appear`);
+        }
+        else {
+            object.target.classList.remove(`appear`);
+        }
+    })
+})
+const hiddenElements = document.querySelectorAll(".hiddenElement");
+hiddenElements.forEach((object) => observer.observe(object));

@@ -99,3 +99,107 @@
     background-color: var(--white);
     border-color: var(--green_light);
 }
+
+
+/* Project cards */
+#portfolioContainer {
+    position: relative;
+    width: 100%;
+}
+.pCard {
+    position: relative;
+    display: flex;
+    object-fit: cover;
+    overflow: hidden;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    height: 20rem;
+    max-height: 100%;
+    align-items: stretch;
+    border-radius: 6px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    overflow: hidden;
+    background-color: var(--bgColorDark);
+}
+.pImgArea {
+    object-fit: cover;
+    overflow:hidden;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    flex:1;
+}
+.pImg {
+    object-fit: cover;
+    object-position: center;
+    width:  100%;
+    height: 100%;
+    margin: 0;
+}
+.pInfo {
+    position: absolute;
+    max-height: 20rem;
+    width: 100%;
+    bottom: 0;
+    padding: 0.5rem;
+    background-color: var(--bgColorDark);
+    transition: transform 0.5s ease-in-out;
+    transform: translateY(100%);
+}
+.pCard:hover .pInfo {
+    transform: translateY(0.2%);
+}
+.pTitle {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin: 0;
+}
+.pType, .pDes {
+    margin: 0.5rem 0 ;
+}
+.pLinkArea {
+    width: 100%;
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: end;
+    margin: 0.5rem 0;
+}
+.pLink {
+    padding: 0.5rem;
+    height: fit-content;
+    width: fit-content;
+    color: var(--orange);
+    background-color: var(--bgColorDark);
+    border: 1px solid var(--orange);
+    border-radius: 6px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.pLink:hover {
+    background-color: var(--orange);
+    color: var(--bgColorDark);
+}
+
+/* Change the scrollbar look to fit the box style */
+.pInfo::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.pInfo::-webkit-scrollbar-track {
+    border-radius: 6px;
+    background-color: var(--bgColor);
+    border: 1px solid var(--bgColorDark);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+
+.pInfo::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: var(--bgColorLight);
+}
+.pInfo::-webkit-scrollbar-corner {
+    background-color: var(--bgColor);
+}

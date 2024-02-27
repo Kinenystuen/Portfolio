@@ -5,13 +5,10 @@
 @import url(/css/_header_menu.css);
 @import url(/css/_footer.css);
 @import url(/css/_card.css);
-@import url(/css/_blog_site.css);
-@import url(/css/_buttons.css);
 @import url(/css/_text.css);
 @import url(/css/_carousel.css);
-@import url(/css/_form.css);
-@import url(/css/_about.css);
 @import url(/css/_colors.css);
+@import url(/css/_form.css);
 
 /* New imports */
 @import url(/css/_portfolioCard.css);

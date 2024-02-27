@@ -9,7 +9,6 @@
 }
 
 html {
-    background-color: var(--creamwhite);
     font-family: var(--dosis);
     font-size: 16px;
     position: relative;
@@ -19,11 +18,11 @@ body {
     margin: 0px;
     font-family: var(--epilogue);
     font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
-    color: var(--dark_black);
+    color: var(--fontColor);
+    background-color: var(--bgColor);
 }
 
 main {
-    background-color: var(--creamwhite);
     position: relative;
 }
 
@@ -46,12 +45,12 @@ nav {
 
 a {
     text-decoration: none;
-    font-family: 'Lato', 'Dosis', Arial, Helvetica, sans-serif ;
-    color: var(--green);
+    font-family: var(--firaCode);
     font-size: 1rem;
+    cursor: pointer;
 }
 h1, h2, h3, h4 {
-    font-family: 'Montserrat', 'Epilogue', 'Dosis', Arial, Helvetica, sans-serif;
+    font-family: var(--firaCode)
 }
 h1 {
     font-size: 1.5rem;
@@ -68,14 +67,40 @@ h4 {
     padding-top: 1rem;
 }
 p {
-    font-family:  'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--montserrat)  ;
     font-weight: 400;
     font-size: 1rem;
 }
 .h1Title, .h1Post {
     margin: 1rem 0 0;
     width: 100%;
-  }
+}
+
+.sectionTitle {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 400;
+    color: var(--orange);
+}
+.aboutMeImg {
+    border-radius: 100%;
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover;
+}
+
+.sectionTitle::before {
+    content: ""; /* Required for the pseudo-element */
+    background-image: url("/img/section-icon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.5rem;
+}
+
 
 .pointer {
     cursor: pointer;
@@ -91,14 +116,10 @@ p {
     border-radius: 6px;
     padding: 0.4rem;
     margin-top: 1rem;
-    /* margin-top: 2rem; */
-    background-color: var(--creamwhite);
-    border: 1px solid var(--creamwhite);
     height: 100%;
 }
 
 .goBackButton:hover {
-    background-color: var(--green_light);
 }
 
 .goBackButtonText {
@@ -112,27 +133,6 @@ p {
     padding-top:0.15rem;
 }
 
-/* arrow up */
-#arrowUpButton {
-    display: none; /* Initially hide the button */
-    position: fixed;
-    bottom: 5%;
-    right: 5%;
-    width: 40px;
-    height: 40px;
-    background-color: #000;
-    color: #fff;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    cursor: pointer;
-    z-index: 9999;
-}
-
-#arrowUpButton:hover {
-    background-color: #333;
-}
-
 
 
 .custom-icon-size {
@@ -141,7 +141,7 @@ p {
 
 .backgroundDiv {
     position: relative;
-    background-color: var(--creamwhite);
+    background-color: var(--bgColor);
     width: 100%;
     height: fit-content;
     z-index: 2;
@@ -153,6 +153,19 @@ p {
 .hidden_element {
     display: none;
 }
+.hiddenElement { /* used on scroll animations */
+    opacity: 0;
+    transition: all 1s;
+}
+.appear {
+    opacity: 1;
+}
+@media(prefers-reduced-motion) {
+    .hiddenElement {
+        transition: none;
+    }
+}
+
 .line {
     height: 2px;
     background-color: var(--dark_brown);
@@ -170,6 +183,10 @@ p {
 .fitPage {
     min-height: 100vh;
     min-height: calc(var(--vh, 1vh) * 94);
+}
+
+.scroll {
+    overflow: scroll;
 }
 
 .loaderArea {
@@ -216,19 +233,20 @@ p {
 
 /* Logo image */
 
-.logo_mountain {
-    height: 5rem;
-    width: 5rem;
+.logo_site {
+    height: 3.5rem;
+    width: fit-content;
 }
 
 .logo-area_title {
     text-transform: uppercase;
-    color: var(--black);
+    font-family: var(--firaCode);
+    color: var(--fontColor);
     font-weight: 800;
     font-size: 1.2rem;
     text-align: center;
     text-wrap: wrap;
-    padding: 0.5rem 0rem;
+    padding: 0.5rem 0.8rem;
 }
 
 
@@ -253,5 +271,4 @@ p {
     margin: 2rem 0;
     padding: 1rem 3rem;
     border-radius: 6px;
-    background-color: var(--creamwhite);
 }

@@ -14,16 +14,18 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: fit-content;
     margin: 0 auto;
     position: fixed;
     top: 0;
     z-index: 1;
 }
 .headerHome.visible { /* Homepage */
-    background-color: var(--creamwhite);
+    background-color: var(--bgColor);
+    background-color: var(--bgColor-rgba)
 }
 .header {
-    background-color: var(--creamwhite);
+    background-color: var(--bgColor);
     display: flex;
     position: absolute;
     justify-content: space-between;
@@ -55,7 +57,7 @@ header {
     right: 2%;
     margin: 1rem 0;
     font-size: 1.125rem;
-    font-weight: 600;
+    font-weight: 400;
     font-family: "Epilogue", Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase;
 }
@@ -64,7 +66,7 @@ header {
     padding: 0.3rem 0.6rem;
     text-decoration: none;
     position: relative;
-    color: var(--black_lighter);
+    color: var(--fontColor);
     transition: opacity .2s ease-in-out,background-color .2s ease-in-out;
 }
 
@@ -75,7 +77,7 @@ header {
     height: 3px;
     bottom: 0;
     left: 0;
-    background: var(--green_light);
+    background: var(--orange);
     transition: width 0.3s ease-in-out;
 }
 
@@ -96,7 +98,7 @@ header {
 }
 
 .nav-menu-a:hover {
-    color: var(--black);
+    color: var(--fontColor);
     /* background-color: var(--green_light); */
     border-radius: 6px;
 }
@@ -116,15 +118,14 @@ header {
     background-image: url(/icons/V_hamburger.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: var(--creamwhite);
     position: absolute;
     padding: 1rem 0;
     z-index: 101;
     border: none;
+    border-radius: 6px;
 }
 
 .hamburger_icon:hover {
-    background-color: var(--creamwhite);
     border: none;
 }
 
@@ -138,8 +139,7 @@ header {
     width: 100%;
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
-
-    /* padding: 1rem 0 2rem; */
+    
 }
 .portfolieTitle {
     display: flex;
@@ -150,28 +150,20 @@ header {
     padding: 2rem;
     margin: 1rem;
 }
-.portfolioImgArea {
-    flex: 1;
-    width: 100%;
-    height: 100%;
-}
-.portfolioImg {
-    display: flex;
-    object-fit: cover;
-    opacity: 1;
+.headerImg {
+    opacity: 0.1;
     margin: 0 auto;
     width: 100%;
-    height: 100vh;
-    height: calc(var(--vh, 1vh) * 100);
+    height: 60vh;
+    height: calc(var(--vh, 1vh) * 60);
+    filter: brightness(0.4);
+    background-image: url("/img/IMG_20180221_141251.jpg");
     background-position: 100%;
-    filter: opacity(60%);
-    transition: filter 0.5s ease;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 6%;
 }
-
-.portfolioImg:hover {
-    filter:opacity(100%);
-}
-
 .floating {
     position: absolute;
     display: flex;
@@ -184,22 +176,20 @@ header {
     text-align: center;
     margin: 0;
     padding: 10px;
-}
-
-.floating_logo {
-    height: 16rem;
+    width: 100%;
 }
 
 .headerTitle {
-    font-family: var(--montserrat);
-    font-weight: 800;
+    font-family: var(--firaCode);
+    font-weight: 600;
     font-size: 3rem;
+    color: var(--orange);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
     text-align: center;
-    color: var(--white);
     text-transform: uppercase;
     margin: 0;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+    padding: 0;
 }
 
 .fa-circle-arrow-down_area {

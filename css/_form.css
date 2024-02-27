@@ -1,0 +1,81 @@
+
+.formContainer {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 50%;
+    /* max-width: 500px; */
+    margin: auto;
+}
+#commentForm {
+    width: fit-content;
+    position: relative;
+    margin: 0 auto;
+}
+#postComment {
+    position: relative;
+}
+
+.formFill {
+    display: flex;
+    flex-direction: column;
+}
+.formFill-error {
+    /* border-left: 3px solid var(--red_dark); */
+    padding: 0.5rem;
+}
+.formFill-message {
+    width: 100%;
+}
+#name-error, #email-error, #subject-error, #message-error {
+    margin:  0.5rem 0rem  0rem  0.2rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--red_dark);
+}
+.formError {
+    display: none;
+}
+
+.validIcon-name, .validIcon-email, .validIcon-subject, .validIcon-message {
+    display: none;
+}
+
+.validIcon-name[data-visible="true"], .validIcon-email[data-visible="true"], .validIcon-subject[data-visible="true"], .validIcon-message[data-visible="true"] {
+    display: inline-block;
+}
+
+.form-input {   
+    padding: 0.3rem 0.7rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: 2px solid var(--gray);
+    border-radius: 6px;
+    margin: 0.5rem;
+}
+.form-label {
+    margin-bottom: 0.5rem;
+    margin: 0.5rem;
+}
+.form-textarea {   
+    padding: 0.3rem 0.7rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: 2px solid var(--gray);
+    border-radius: 6px;
+    width: 100%;    
+    margin: 0.5rem;
+}
+
+.instruction {
+    font-size: 0.8rem;
+}
+
+.sendMessageContainer {
+    display: none;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: var(--white);
+    border-radius: 6px;
+}

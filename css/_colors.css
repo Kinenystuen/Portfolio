@@ -1,25 +1,11 @@
 
 
-/* backgrounds */
-.bgWhite {
-    background-color: var(--white);
-}
-.bgGreen {
-    background-color: var(--green_light);
-}
-.bgDarkBlack {
-    background-color: var(--dark_black);
-}
-.bgDarkBlue {
-    background-color: #596D81;
-}
-.bgCreamWhite {
-    background-color: var(--creamwhite);
-}
-.bgDarkBrown {
-    background-color: var(--dark_brown);
+/* color */
+.orange  {
+    color: var(--orange)
 }
 
-.Tcreamwhite {
-    color: var(--creamwhite);
+.bgBlackLighter {
+    background-color: var(--bgColorLight);
 }
+
