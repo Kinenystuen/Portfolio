@@ -9,11 +9,18 @@ export async function dropdownMenu() {
       if (visibility === "false") {
           navMenu.setAttribute("data-visible", "true");
           hamburgerMenu.setAttribute("aria-expanded", "true");
+          hamburgerMenu.classList.add('cross');
       } else if (visibility === "true") {
           navMenu.setAttribute("data-visible", "false");
           hamburgerMenu.setAttribute("aria-expanded", "false");
+          hamburgerMenu.classList.remove('cross');
       }
   });
 }
 
 dropdownMenu();
+function toggleMenu() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    
+  }
+  

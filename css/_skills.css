@@ -11,6 +11,10 @@
     padding: 0.5rem;
     background-color: var(--white-rgba);
     border-radius: 6px;
-    width: 8rem;
-    height: 8rem;
+    width: 6rem;
+    height: 6rem;
+    transition: transform 0.3s ease-in-out;
+}
+.skillLink:hover {
+    transform: scale(1.02);
 }
