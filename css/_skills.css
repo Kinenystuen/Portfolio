@@ -1,0 +1,16 @@
+#skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.skillLink {
+    position: relative;    
+}
+.skillImg {    
+    padding: 0.5rem;
+    background-color: var(--white-rgba);
+    border-radius: 6px;
+    width: 8rem;
+    height: 8rem;
+}

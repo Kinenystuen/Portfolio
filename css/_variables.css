@@ -5,35 +5,32 @@
 */
 
 :root {
-    /* --bgColor: #1E1E1E;
-    --bgColor-rgba: rgba(30,30,30, 0.9);
-    --bgColorLight: #2F2D2E;
-    --bgColorDark: #0C1417;
-    --fontColor: #FFFDED;
-    --fontColorLight: #fff;
-    --orange: #E19630; */
+    --white-rgba: rgba(255,255,255, 0.6);
 
     /* fonts */
     --firaCode: "Fira Code", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     --montserrat: 'Montserrat', "Epilogue", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* Light mode */
+/* Dark/light mode */
 :root, :root.dark {
     --bgColor: #1E1E1E;
     --bgColor-rgba: rgba(30,30,30, 0.9);
     --bgColorLight: #2F2D2E;
     --bgColorDark: #0C1417;
+    --fontColorDarker: #CCCCCC;
     --fontColor: #FFFDED;
     --fontColorLight: #fff;
     --orange: #E19630;
 }
 :root.light {
     --bgColor: #F5F5F5;
+    --bgColor: #F9F7F3;
+    --bgColor: #ffffff;
     --bgColor-rgba: rgba(255, 255, 255, 0.9);
-    --bgColorLight: #E0E0E0;
-    --bgColorDark: #FFFFFF; 
+    --bgColorLight: #F9F7F3;
+    --bgColorDark: #F5F5F5; 
     --fontColor: #1E1E1E;
     --fontColorLight: #000000; 
-    --orange: #000;
+    --orange: #E19630;
 }

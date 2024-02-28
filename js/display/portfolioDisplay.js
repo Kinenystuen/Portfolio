@@ -68,6 +68,6 @@ export async function displayPortfolio(data) {
 }
 
 // Fetch portfolio data and then display it
-fetchPortfolioData()
-  .then((data) => displayPortfolio(data))
-  .catch((error) => console.error("Error fetching portfolio data:", error));
+// fetchPortfolioData()
+//   .then((data) => displayPortfolio(data))
+//   .catch((error) => console.error("Error fetching portfolio data:", error));

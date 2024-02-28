@@ -4,12 +4,14 @@ import { scrollheader } from "./render/scroll.js";
 
 import { fetchPortfolioData } from "./api/fetchPortfolioData.js";
 import { displayPortfolio } from "./display/portfolioDisplay.js";
+import { fetchSkillsData } from "./api/fetchSkillsData.js";
+import { displaySkills } from "./display/skillsDisplay.js";
 
+// portfolio card and dark/light mode
 import { toggleInfo } from "./render/toggle.js";
 import { toggleDarkLight } from "./render/toggle.js";
 
-
-
+import { validateForm } from "./form/contact.js";
 
 
 // Fix vh 

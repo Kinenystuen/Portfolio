@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Css3",
+        "imgSrc": "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+        "alt": "css3",
+        "href": "https://www.w3schools.com/css/"
+    },
+    {
+        "name": "Html5",
+        "imgSrc": "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
+        "alt": "html5",
+        "href": "https://www.w3.org/html/"
+    },
+    {
+        "name": "JavaScript",
+        "imgSrc": "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg",
+        "alt": "javascript",
+        "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    },
+    {
+        "name": "Figma",
+        "imgSrc": "https://camo.githubusercontent.com/f32e9cca1f0df0138a8f536217daa54ad21b6913642422f32e3c5c623f3a06b9/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667",
+        "alt": "figma",
+        "href": "https://www.figma.com/"
+    },
+    {
+        "name": "Wordpress",
+        "imgSrc": "https://camo.githubusercontent.com/b6345dc86b0c7bcdbe78d2cc41f27b445712191ba41e26e6e163381ed8d58822/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f392f39332f576f726470726573735f426c75655f6c6f676f2e706e67",
+        "alt": "wordpress",
+        "href": "https://wordpress.org/"
+    },
+    {
+        "name": "GitHub",
+        "imgSrc": "https://camo.githubusercontent.com/18cfdc02648d5adceb0e43e3ebb80742421d56122e2a76a1cc3f7ab7eafd6780/68747470733a2f2f6769746875622e6769746875626173736574732e636f6d2f6173736574732f4769744875622d4d61726b2d6561323937316365653739392e706e67",
+        "alt": "github",
+        "href": "https://github.com/"
+    }
+]

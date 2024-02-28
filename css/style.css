@@ -9,9 +9,8 @@
 @import url(/css/_carousel.css);
 @import url(/css/_colors.css);
 @import url(/css/_form.css);
+@import url(/css/_skills.css);
 
-/* New imports */
-@import url(/css/_portfolioCard.css);
 
 /* media queries import has to be at the bottom to work */
 @import url(/css/_media_queries.css);

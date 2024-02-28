@@ -7,11 +7,10 @@
     <title>Portfolio | Kine Odden Nystuen</title>
     <link rel="stylesheet" href="/css/style.css">
     <script type="module" src="/js/index.js"></script>
-    <script src="https://kit.fontawesome.com/c4698ad2a1.js" crossorigin="anonymous"></script>
     <meta name="author" content="Kine Odden Nystuen">
     <meta name="Keywords" content="Front-end utvikling">
     <meta name="description" content="Portfolio Kine Odden Nystuen">
-    <link rel="icon" href="" type="image/x-icon">
+    <link rel="icon" href="/img/logo_portfolio.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -31,23 +30,27 @@
             <nav class="nav-menu" data-visible="false">
                 <ul class="nav-menu-ul">
                     <li>
-                        <a class="nav-menu-a" href="#home">Home</a>
+                        <a class="nav-menu-a active" id="navHome" href="#home">Home</a>
                     </li>
                     <li>
-                        <a class="nav-menu-a" href="#myProjects">My projects</a>
+                        <a class="nav-menu-a"id="navAbout" href="#aboutMe">About</a>
                     </li>
                     <li>
-                        <a class="nav-menu-a" href="#aboutMe">About</a>
+                        <a class="nav-menu-a"id="navProjects" href="#sectionPortfolioCards">My projects</a>
                     </li>
                     <li>
-                        <a class="nav-menu-a" href="#contactMe">Contact</a>
+                        <a class="nav-menu-a"id="navContact" href="#sectionContact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="nav-menu-a"id="navSkills" href="#mySkills">Skills</a>
                     </li>
                 </ul>
             </nav>
+            <div class="circle" id="icon"></div>
         </div>
     </header>
     <main class="fitPage">
-        <div class="headerContainer">
+        <div class="headerContainer" id="home">
             <div class="headerImg"></div>
             <div class="floating">
                 <div class="portfolieTitle hiddenElement">
@@ -57,6 +60,7 @@
                 </div>
             </div>
         </div>
+
         <button id="darkLightMode">Dark/light</button>
         <section id="aboutMe" class="bgBlackLighter padding1rem hiddenElement">
             <div class="content_wrap">
@@ -80,19 +84,19 @@
                 </div>
             </div>
         </section>
-        <section id="sectionContact">
+        <section id="sectionContact" class="bgBlackLighter padding2remTB ">
             <div class="content_wrap">
                 <h2 class="sectionTitle">Contact me</h2>
                 <div class="formContainer">
-                    <form action="https://formspree.io/f/xrgnqyyl" method="POST" class="contactForm" id="contactForm">
+                    <form action="https://formspree.io/f/xpzvrjqg" method="POST" class="contactForm" id="contactForm">
                         <fieldset>
-                            <legend>
-                                <h2>Contact form</h2>
-                            </legend>
+                            <!-- <legend>
+                                <h3>Send me an e-mail</h3>
+                            </legend> -->
                             <div class="formFill formFill-name">
                                 <label class="form-label" for="name">
                                     <span>Full name</span>
-                                    <span class="instruction">(Minimum 5 characters)</span>
+                                    <!-- <span class="instruction">(Minimum 3 characters)</span> -->
                                     <span class="validIcon validIcon-name" data-visible="false">
                                         <i class="fa-solid fa-circle-check" style="color: #7da87b;"></i>
                                     </span>
@@ -104,7 +108,7 @@
                             <div class="formFill formFill-email">
                                 <label class="form-label" for="email">
                                     <span>E-mail</span>
-                                    <span class="instruction">(Valid e-mail required)</span>
+                                    <!-- <span class="instruction">(Valid e-mail required)</span> -->
                                     <span class="validIcon validIcon-email" data-visible="false">
                                         <i class="fa-solid fa-circle-check" style="color: #7da87b;"></i>
                                     </span>
@@ -116,7 +120,7 @@
                             <div class="formFill formFill-subject">
                                 <label class="form-label" for="subject">
                                     <span>Subject</span>
-                                    <span class="instruction">(Minimum 15 characters)</span>
+                                    <!-- <span class="instruction">(Minimum 5 characters)</span> -->
                                     <span class="validIcon validIcon-subject" data-visible="false">
                                         <i class="fa-solid fa-circle-check" style="color: #7da87b;"></i>
                                     </span>
@@ -129,7 +133,7 @@
                             <div class="formFill formFill-message">
                                 <label class="form-label" for="message">
                                     <span>Message</span>
-                                    <span class="instruction">(Minimun 25 characters)</span>
+                                    <!-- <span class="instruction">(Minimun 10 characters)</span> -->
                                     <span class="validIcon validIcon-message" data-visible="false">
                                         <i class="fa-solid fa-circle-check" style="color: #7da87b;"></i>
                                     </span>
@@ -147,8 +151,8 @@
                     <div class="sendMessageContainer">
                         <div class="sendMessageSuccess">
                             <div>
-                                <h3>Your message was sent.</h3>
-                                <p>Thank you for showing interest in my blog. I will be in contact with you shortly.</p>
+                                <h3 class="SMTitle">Your message was sent.</h3>
+                                <p class="SMMessage">Thank you for showing interest. I will be in contact with you shortly.</p>
                             </div>
                         </div>
                     </div>
@@ -158,6 +162,17 @@
         <section id="mySkills">
             <div class="content_wrap">
                 <h2 class="sectionTitle">My Skills</h2>
+                <div id="skillsContainer">
+
+                </div>
+                <p> 
+                    <a href="https://www.w3schools.com/css/" rel="nofollow"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40" style="max-width: 100%;"> </a> 
+                    <a href="https://www.w3.org/html/" rel="nofollow"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40" style="max-width: 100%;"> </a> 
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" rel="nofollow"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40" style="max-width: 100%;"> </a> 
+                    <a href="https://www.figma.com/" rel="nofollow"> <img src="https://camo.githubusercontent.com/f32e9cca1f0df0138a8f536217daa54ad21b6913642422f32e3c5c623f3a06b9/68747470733a2f2f7777772e766563746f726c6f676f2e7a6f6e652f6c6f676f732f6669676d612f6669676d612d69636f6e2e737667" alt="figma" width="40" height="40" data-canonical-src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" style="max-width: 100%;"> </a> 
+                    <a href="https://wordpress.org/" rel="nofollow"> <img src="https://camo.githubusercontent.com/b6345dc86b0c7bcdbe78d2cc41f27b445712191ba41e26e6e163381ed8d58822/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f392f39332f576f726470726573735f426c75655f6c6f676f2e706e67" alt="Wordpress" width="40" height="40" data-canonical-src="https://upload.wikimedia.org/wikipedia/commons/9/93/Wordpress_Blue_logo.png" style="max-width: 100%;"> </a> 
+                    <a href="https://github.com/"> <img src="https://camo.githubusercontent.com/18cfdc02648d5adceb0e43e3ebb80742421d56122e2a76a1cc3f7ab7eafd6780/68747470733a2f2f6769746875622e6769746875626173736574732e636f6d2f6173736574732f4769744875622d4d61726b2d6561323937316365653739392e706e67" alt="GitHub" width="40" height="40" data-canonical-src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" style="max-width: 100%;"> </a> 
+                </p>
             </div>
         </section>
     </main>
