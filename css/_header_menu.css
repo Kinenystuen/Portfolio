@@ -114,6 +114,7 @@ header {
     justify-content: center;
     align-items: center;
     margin-left: 2%;
+    width: fit-content;
 }
 
 /* Hamburger menu icon */
