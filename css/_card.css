@@ -19,7 +19,6 @@
   }
   .card:hover {
     transform: scale(1.02);
-    transform: scale(1.1rem) ;
   }
 
 .cardImg {
@@ -106,6 +105,7 @@
 #portfolioContainer {
     position: relative;
     width: 100%;
+    padding: 1rem;
 }
 .pCard {
     position: relative;

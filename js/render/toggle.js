@@ -14,9 +14,8 @@ export function toggleInfo() {
 export function toggleDarkLight() {
   const button = document.getElementById("icon");
   button.addEventListener("click", () => {
-    console.log("click");
-    console.log(document.documentElement.classList);
     document.documentElement.classList.toggle("light");
+    document.querySelector(".circle").classList.toggle("clicked");
   });
 }
 toggleDarkLight();

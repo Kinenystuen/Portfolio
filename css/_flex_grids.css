@@ -12,6 +12,7 @@
     text-align: start;
     width: 100%;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 .flexCenterRow {
     display: flex;

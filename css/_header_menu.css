@@ -134,7 +134,7 @@ header {
     outline: none;
     padding: 0;
 }
-
+/* create lines using before and after */
 .hLine,
 .hamburger_icon::before,
 .hamburger_icon::after {
@@ -149,7 +149,7 @@ header {
 
 .cross.hamburger_icon::before {
     transform: rotate(32deg);
-    translate: 0 calc((2px * 3) / 6);
+    /* translate: 0 calc((2px * 3) / 6); */
 }
 
 .cross .hLine {
@@ -159,12 +159,8 @@ header {
 
 .cross.hamburger_icon::after {
     transform: rotate(-32deg);
-    translate: 0 calc((2px * 3) / 6);
+    /* translate: 0 calc((2px * 3) / 6); */
 }
-
-
-
-
 
 /* Header area */
 .headerContainer {
@@ -193,7 +189,7 @@ header {
     margin: 0 auto;
     width: 100%;
     height: 60vh;
-    height: calc(var(--vh, 1vh) * 60);
+    height: calc(var(--vh, 1vh) * 100);
     filter: brightness(0.4);
     background-image: url("/img/IMG_20180221_141251.jpg");
     background-position: 100%;
@@ -209,7 +205,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 40%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -231,47 +227,11 @@ header {
     padding: 0;
 }
 
-.fa-circle-arrow-down_area {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-}
-
-.fa-circle-arrow-down {
-    transition: transform 0.3s ease-in-out;
-    z-index: 10;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-.fa-circle-arrow-down:hover {
-    transform: scale(1.4);
-}
-
-@keyframes pulse {
-    0% {
-        transform: translateY(0) translateX(-15px);
-    }
-
-    50% {
-        transform: translateY(-5px) translateX(-15px);
-    }
-
-    100% {
-        transform: translateY(0) translateX(-15px);
-    }
-}
-
-.pulse {
-    animation: pulse 2s infinite;
-}
-
 
 /* light/dark mode circle */
 .circle {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.3rem;
+    height: 1.3rem;
     margin: 0 1.5rem;
     border-radius: 50%;
     border: 2px solid var(--fontColor);
@@ -284,7 +244,6 @@ header {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
     width: 50%;
     height: 100%;
     background-color: transparent;
@@ -300,9 +259,9 @@ header {
     height: 100%;
     background-color: var(--fontColor);
     border-radius: 50%;
-    transition: left 0.3s;
+    transition: left 0.4s;
 }
 
 .circle.clicked::after {
-    left: 0;
+    left: 0%;
 }

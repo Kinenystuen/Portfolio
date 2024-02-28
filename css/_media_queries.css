@@ -31,6 +31,9 @@ Content:
     .headerImg {
         height: calc(var(--vh, 1vh) * 60);
     }
+    .logo_site {
+        width: 3.2rem;
+    }
 }
 
 @media (max-width: 800px) {
@@ -48,7 +51,8 @@ Content:
     }
 
     .headerImg {
-        height: calc(var(--vh, 1vh) * 40);
+        height: calc(var(--vh, 1vh) * 60);
+        background-position: 30%;
     }
 
     .nav-menu {
@@ -77,6 +81,11 @@ Content:
         display: flex;
         z-index: 101;
         right: 1rem;
+    }
+
+    .circle {
+        position: absolute;
+        right: 3rem;
     }
 
     .headerHome.visible {
@@ -139,13 +148,9 @@ Content:
         padding: 1rem;
     }
 
-    /* light/dark mode circle */
-    .circle {}
-
 }
 
 @media (max-width: 500px) {
-
     * {
         font-size: 14px;
     }
@@ -168,40 +173,22 @@ Content:
         gap: 1rem;
     }
 
-    .flex {
-        flex-direction: column;
-    }
-
     .aboutMeImg {
         width: 100%;
     }
 
-
-
-    /* carousel */
-    .carousel {
-        margin: 0.4rem;
-        gap: 1.2rem;
+    .headerContainer {
+        height: calc(var(--vh, 1vh) * 40);
     }
-
-    /* search menu blog posts */
-    .flex-end-center {
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-    }
-
-    .search-input:hover {
-        width: 100%;
-    }
-
     .headerTitle {
         font-size: 1.5rem;
     }
 
     .headerImg {
         position: relative;
-        height: calc(var(--vh, 1vh) * 100);
+        height: calc(var(--vh, 1vh) * 20);
+        background-position: 50%;
+        background-position-y: 1%;
     }
 
     /* Carousel home */
