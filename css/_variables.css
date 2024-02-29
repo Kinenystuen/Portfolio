@@ -6,6 +6,7 @@
 
 :root {
     --white-rgba: rgba(255,255,255, 0.6);
+    --orange-rgba: rgba(225,150,48, 0.1);
 
     /* fonts */
     --firaCode: "Fira Code", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -24,12 +25,11 @@
     --orange: #E19630;
 }
 :root.light {
-    --bgColor: #F5F5F5;
     --bgColor: #F9F7F3;
-    --bgColor: #ffffff;
+    --bgColor: #F5F5F5;
     --bgColor-rgba: rgba(255, 255, 255, 0.9);
-    --bgColorLight: #F9F7F3;
-    --bgColorDark: #F5F5F5; 
+    --bgColorLight: #ffffff;
+    --bgColorDark: #eae0e0; 
     --fontColor: #1E1E1E;
     --fontColorLight: #000000; 
     --orange: #E19630;

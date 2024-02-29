@@ -176,7 +176,8 @@ Content:
     }
 
     .aboutMeImg {
-        width: 100%;
+        width: 15rem;
+        height: 15rem;
     }
 
     .headerContainer {

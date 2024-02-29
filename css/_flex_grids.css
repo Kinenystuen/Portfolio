@@ -45,7 +45,9 @@
     text-align: start;
     margin: 0 auto;
 }
-
+.flex1 {
+    flex: 1;
+}
 /* Grids */
 /* Used for blog posts, and sel post site */
 .grid200 {

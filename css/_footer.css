@@ -8,14 +8,15 @@ footer {
     background-color: var(--bgColor);
     color: var(--fontColor);
     gap: 0;
-    margin: 0;
     padding: 0;
     z-index: 10;
+    border-top: 1px solid var(--orange-rgba);
     
 }
 .footer {
     height: fit-content;
     box-shadow: 0px 4px 4px 0px rgba(168, 179, 168, 0.1);
+    margin-top: 3rem;
 }
 .footer p {
     margin: 0;
