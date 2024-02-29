@@ -9,7 +9,6 @@ export async function fetchSkillsData() {
             throw new Error(`API request failed with status: ` + response.status);
         } else {
             const data = await response.json();
-            console.log(data);
             displaySkills(data);
             return data;
         }

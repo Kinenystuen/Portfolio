@@ -19,14 +19,14 @@ if (document.querySelector(".headerContainer")) {
 
 
 
-/* Nav scroll - change active nav item */
+/* Nav scroll - change active nav item on scroll*/
 
 const headerHeight = window.offsetHeight;
-console.log(headerHeight)
-
-window.addEventListener('scroll', handleScroll);
 
 function handleScroll() {
+  let maxVisibleArea = 0;
+  let activeNavLink = null;
+
   const sections = document.querySelectorAll('.nav-menu-a');
 
   sections.forEach(navLink => {
@@ -34,62 +34,35 @@ function handleScroll() {
     const targetElement = document.getElementById(targetId);
 
     if (isElementInViewport(targetElement)) {
-      navLink.classList.add('active');
-    } else {
-      navLink.classList.remove('active');
+      const visibleArea = calculateVisibleArea(targetElement);
+      if (visibleArea > maxVisibleArea) {
+        maxVisibleArea = visibleArea;
+        activeNavLink = navLink;
+      }
     }
   });
+  sections.forEach(navLink => {
+    navLink.classList.remove('active');
+  });
+  if (activeNavLink) {
+    activeNavLink.classList.add('active');
+  }
 }
 
 function isElementInViewport(element) {
-  const rect = element.getBoundingClientRect(); // finds out the "cordinates" the element(rectangle)
+  const rect = element.getBoundingClientRect();
   return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.bottom >= 0
   );
 }
 
+function calculateVisibleArea(element) {
+  const rect = element.getBoundingClientRect();
+  const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+  const visibleHeight = Math.min(rect.bottom, viewportHeight) - Math.max(rect.top, 0);
+  return visibleHeight * rect.width;
+}
 
-
-function handleNavOnScroll() {
-    const maxScroll = document.documentElement.scrollHeight - window.offsetHeight;
-
-    // if (scrollY === navHome.offsetTop) {
-    //     navHome.classList.add("active");
-    //   } else {
-    //     navHome.classList.remove("active");
-    //   }
-    // if (scrollY <= navAbout.offsetTop - headerHeight) {
-    //   navHome.classList.add("active");
-    // } else {
-    //   navHome.classList.remove("active");
-    // }
-  
-    // if (scrollY < navAbout.offsetTop - headerHeight || scrollY > navAbout.offsetTop + navAbout.offsetHeight - headerHeight) {
-    //   navAbout.classList.remove("active");
-    // } else if (scrollY >= navAbout.offsetTop - headerHeight) {
-    //   navAbout.classList.add("active");
-    // }
-    // if (scrollY < navProjects.offsetTop - headerHeight || scrollY > maxScroll - footer.offsetHeight) {
-    //     navProjects.classList.remove("active");
-    // } else if (scrollY >= navProjects.offsetTop - headerHeight) {
-    //     navProjects.classList.add("active");
-    // }
-  
-    // if (scrollY < navSkills.offsetTop - headerHeight || scrollY > navSkills.offsetTop + navSkills.offsetHeight - headerHeight) {
-    //   navSkills.classList.remove("active");
-    // } else if (scrollY >= navSkills.offsetTop - headerHeight) {
-    //   navSkills.classList.add("active");
-    // }
-  
-    // if (scrollY >= maxScroll - footer.offsetHeight) {
-    //   navContact.classList.add("active");
-    // } else {
-    //   navContact.classList.remove("active");
-    // }
-    
-  }
-
-  window.addEventListener("scroll", handleNavOnScroll);
+// Add scroll event listener
+window.addEventListener('scroll', handleScroll);
