@@ -26,11 +26,12 @@
 }
 :root.light {
     --bgColor: #F9F7F3;
-    --bgColor: #F5F5F5;
+    --bgColor: #F0F2F5;
     --bgColor-rgba: rgba(255, 255, 255, 0.9);
     --bgColorLight: #ffffff;
-    --bgColorDark: #eae0e0; 
+    --bgColorDark: #FFFFFF; 
     --fontColor: #1E1E1E;
     --fontColorLight: #000000; 
     --orange: #E19630;
+    --orange: #1F1200;
 }

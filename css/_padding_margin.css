@@ -31,7 +31,9 @@
 .padding25remB {
     padding-bottom: 2.5rem;
 }
-
+.section_space {
+    padding: 5%;
+}
 
 /* Margin */
 .margin0 {

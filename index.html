@@ -26,7 +26,7 @@
                 <img class="logo_site" src="/img/logo_portfolio.png" alt="SIte logo">
                 <p class="logo-area_title">KON</p>
             </a>
-            <button class="hamburger_icon" title="Navigation menu button open/close"
+            <button class="hamburger_icon" aria-expanded="false" title="Navigation menu button open/close"
                 aria-label="Navigation menu button">
                 <span class="hLine"></span>
             </button>
@@ -49,7 +49,7 @@
                     </li>
                 </ul>
             </nav>
-            <div class="circle" id="icon"></div>
+            <button class="circle" id="icon" title="Dark/light mode"></button>
         </div>
     </header>
     <main class="fitPage">
@@ -63,7 +63,7 @@
                 </div>
             </div>
         </div>
-        <section id="aboutMe" class="bgBlackLighter padding1rem hiddenElement">
+        <section id="aboutMe" class="bgBlackLighter section_space hiddenElement">
             <div class="content_wrap">
                 <h2 class="sectionTitle">About Me</h2>
                 <div class="flex padding25remB">
@@ -77,7 +77,7 @@
                 </div>
             </div>
         </section>
-        <section class="content_wrap hiddenElement padding2remTB margin_bottom2rem" id="sectionPortfolioCards">
+        <section class="content_wrap hiddenElement section_space margin_bottom2rem" id="sectionPortfolioCards">
             <h2 class="sectionTitle">My projects</h2>
             <div class="grid200" id="portfolioContainer">
                 <div class="loaderArea">
@@ -85,13 +85,13 @@
                 </div>
             </div>
         </section>
-        <section id="sectionContact" class="bgBlackLighter padding2remTB">
+        <section id="sectionContact" class="bgBlackLighter section_space">
             <div class="content_wrap">
                 <h2 class="sectionTitle">Contact me</h2>
                 <div class="flex_spacearound">
-                    <div class="center padding1rem">
+                    <div class="center section_space">
                         <h3>Contact me at</h3>
-                        <p class="phone"><a href="tel:+4790361559">+4790361559</a></p>
+                        <p class="phone">+47 90361559</p>
                         <p class="email"><a href="mailto:kine_on@hotmail.com"
                                 title="Send me a mail">Kine_on@hotmail.com</a></p>
                         <br>
@@ -187,7 +187,7 @@
                 </div>
             </div>
         </section>
-        <section id="mySkills" class="padding2remTB">
+        <section id="mySkills" class="section_space">
             <div class="content_wrap">
                 <h2 class="sectionTitle">Knowledge</h2>
                 <div id="skillsContainer" class="hiddenElement">
@@ -198,11 +198,11 @@
             </div>
         </section>
     </main>
-    <footer class="footer padding2remTB">
-        <div class="flex_spacebetween">
-            <div class="flex1">
+    <footer class="footer section_space">
+        <div class="flex_spacebetween ">
+            <div class="flex1 padding1rem">
                 <h3>Contact</h3>
-                <p class="phone"><a href="tel:+4790361559">+4790361559</a></p>
+                <p class="phone">+4790361559</p>
                 <p class="email"><a href="mailto:kine_on@hotmail.com" title="Send me a mail">Kine_on@hotmail.com</a></p>
                 <br>
                 <div class="">
@@ -217,15 +217,15 @@
                     </a>
                 </div>
             </div>
-            <div class="flex1 flexcenter">
+            <div class="flex1 flexcenter padding1rem">
                 <p class="uppercase firaCode">Kon</p>
                 <a class="footer_logo" href="/index.html">
                     <img class="logo_site" src="/img/logo_portfolio.png" alt="Site logo">
                 </a>
-                <br>
+            </div>
+            <div class="flex1 flexcenter padding1rem">
                 <p>Copyright © 2024 | Kine Odden Nystuen</p>
             </div>
-            <div class="flex1"></div>
         </div>
     </footer>
 </body>

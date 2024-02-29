@@ -128,10 +128,6 @@ header {
     /* default button css */
     background-color: transparent;
     border: none;
-    color: inherit;
-    cursor: pointer;
-    font: inherit;
-    outline: none;
     padding: 0;
 }
 /* create lines using before and after */
@@ -238,6 +234,10 @@ header {
     position: relative;
     cursor: pointer;
     overflow: hidden;
+    
+    /* default button css */
+    background-color: transparent;
+    padding: 0;
 }
 
 .circle::before {

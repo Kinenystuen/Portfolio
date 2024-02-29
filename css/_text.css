@@ -1,16 +1,10 @@
-.fontSize08 {
-    font-size: 0.8rem;
-    font-weight: 400;
-}
+
 
 /* width */
 .width100 {
     width: 100%;
 }
 
-.bold {
-    font-weight: 600;
-}
 .uppercase {
     text-transform: uppercase;
 }

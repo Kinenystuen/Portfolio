@@ -55,6 +55,9 @@
     font-size: 1.3rem;
     margin: 0;
 }
+.pType {
+    font-size: 0.8rem;
+}
 .pType, .pDes {
     margin: 0.5rem 0 ;
 }

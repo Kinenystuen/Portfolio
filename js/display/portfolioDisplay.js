@@ -6,7 +6,7 @@ const portfolioContainer = document.getElementById("portfolioContainer");
 export async function displayPortfolio(data) {
   let delay = 0;
   clearHTML(portfolioContainer);
-  data.forEach((object) => {
+  data.reverse().forEach((object) => {
     // create card div
     const portfolioCard = document.createElement("div");
     portfolioCard.classList.add("pCard");
@@ -25,7 +25,8 @@ export async function displayPortfolio(data) {
     pInfo.className = "pInfo";
     // type of project
     const pType = document.createElement("p");
-    pType.innerHTML = object.type;
+    pType.innerHTML = `${object.type} - ${object.year}`;
+    pType.className = "pType";
     // Name of project
     const pTitle = document.createElement("h3");
     pTitle.className = "pTitle"
@@ -66,8 +67,3 @@ export async function displayPortfolio(data) {
     }
   });
 }
-
-// Fetch portfolio data and then display it
-// fetchPortfolioData()
-//   .then((data) => displayPortfolio(data))
-//   .catch((error) => console.error("Error fetching portfolio data:", error));
