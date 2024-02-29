@@ -15,9 +15,15 @@ footer {
 }
 .footer {
     height: fit-content;
-    box-shadow: 0px 4px 4px 0px rgba(168, 179, 168, 0.1);
+    margin: auto;
     margin-top: 3rem;
+    padding: 0 2rem;
 }
 .footer p {
     margin: 0;
+}
+
+.FIcon {
+    height: 2rem;
+    width: 2rem;
 }
