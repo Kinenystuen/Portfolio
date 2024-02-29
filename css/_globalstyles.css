@@ -145,8 +145,7 @@ button {
     opacity: 0;
     transition: all 1s;
 }
-
-.appear {
+.appear { /* needs to be after hiddenElement here in css */
     opacity: 1;
 }
 
@@ -156,23 +155,11 @@ button {
     }
 }
 
-.line {
-    height: 2px;
-    background-color: var(--dark_brown);
-    width: 100%;
-    border-radius: 1rem;
-}
-
 .content_wrap {
     /* add as page margin */
     width: 80%;
     margin: 0px auto;
     max-width: 1600px;
-}
-
-.fitPage {
-    min-height: 100vh;
-    min-height: calc(var(--vh, 1vh) * 94);
 }
 
 .scroll {
@@ -226,8 +213,8 @@ button {
 /* Logo image */
 
 .logo_site {
-    height: 3.5rem;
-    width: 2.5rem;
+    height: 3.4rem;
+    width: 3rem;
 }
 
 .logo-area_title {

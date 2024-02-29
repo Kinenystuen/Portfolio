@@ -14,37 +14,6 @@
     gap: 2rem;
     flex-wrap: wrap;
 }
-.flexCenterRow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-.flex-start-center-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start ;
-    gap: 0.5rem;
-}
-.flex-end-center {
-    display: flex;
-    justify-content: center ;
-    align-items: center;
-}
-
-.flex_spacebetween {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-.flex_spacearound {
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    width: 100%;
-}
 
 .flexCR {
     display: flex;
@@ -57,14 +26,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
-.flex1 {
-    flex:1;
+.flex_spacebetween {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
 }
-.flex2 {
-    flex:2;
+.flex_spacearound {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
-
+.center {
+    text-align: start;
+    margin: 0 auto;
+}
 
 /* Grids */
 /* Used for blog posts, and sel post site */
@@ -76,16 +56,6 @@
 .grid300 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
-}
-.grid400 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 1rem;
-}
-.grid400-fill {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
     gap: 1rem;
 }
 

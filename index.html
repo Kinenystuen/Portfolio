@@ -23,10 +23,11 @@
     <header class="headerHomepage">
         <div class="headerHome">
             <a class="logo-area" href="#">
-                <img class="logo_site" src="/img/logo_portfolio.png" alt="Logo of a button">
+                <img class="logo_site" src="/img/logo_portfolio.png" alt="SIte logo">
                 <p class="logo-area_title">KON</p>
             </a>
-            <button class="hamburger_icon" title="Navigation menu button open/close" aria-label="Navigation menu button">
+            <button class="hamburger_icon" title="Navigation menu button open/close"
+                aria-label="Navigation menu button">
                 <div class="hLine"></div>
             </button>
             <nav class="nav-menu" data-visible="false">
@@ -44,7 +45,7 @@
                         <a class="nav-menu-a" id="navContact" href="#sectionContact">Contact</a>
                     </li>
                     <li>
-                        <a class="nav-menu-a" id="navSkills" href="#mySkills">Skills</a>
+                        <a class="nav-menu-a" id="navSkills" href="#mySkills">Knowledge</a>
                     </li>
                 </ul>
             </nav>
@@ -85,71 +86,99 @@
             </div>
         </section>
         <section id="sectionContact" class="bgBlackLighter padding2remTB">
-            <div class="content_wrap hiddenElement">
+            <div class="content_wrap">
                 <h2 class="sectionTitle">Contact me</h2>
-                <div class="formContainer">
-                    <form action="https://formspree.io/f/xpzvrjqg" method="POST" class="contactForm" id="contactForm">
-                        <fieldset>
-                            <div class="formFill formFill-name">
-                                <label class="form-label" for="name">
-                                    <span>Full name</span>
-                                    <span class="validIcon validIcon-name" data-visible="false">
-                                        <i class="fa-solid fa-circle-check" style="color: #7da87b;"></i>
-                                    </span>
-                                </label>
-                                <input class="form-input" type="text" id="name" name="name" placeholder="Full name">
-                                <div id="name-error" class="formError">Please enter your name. Minimum 5 characters.
-                                </div>
-                            </div>
+                <div class="flex_spacearound">
+                    <div class="center flex1">
+                        <h3>Connect with me</h3>
+                        <p class="phone"><a href="tel:+47 90361559">Phone: +4790361559</a></p>
+                        <p class="email"><a href="mailto:kine_on@hotmail.com" title="Send me a mail">E-mail: Kine_on@hotmail.com</a></p>
+                        <div class="">
+                            <a href="https://www.instagram.com/kinenystuen/">
+                                <img class="SMIcon" src="/icons/instagram_icon.png"
+                                    alt="Icon by https://freeicons.io/profile/3 on Freeicon.io"
+                                    title="Instagram | Kinenystuen">
+                            </a>
+                            <a href="https://www.linkedin.com/in/kine-odden-nystuen-208744223/">
+                                <img class="SMIcon" src="/icons/linkedin_icon.png"
+                                    alt="Icon by https://freeicons.io/profile/823 on Freeicons.io"
+                                    title="Linkedin | Kine Odden Nystuen">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="formContainer hiddenElement">
+                        <form action="https://formspree.io/f/xpzvrjqg" method="POST" class="contactForm"
+                            id="contactForm">
+                            <fieldset>
+                                <legend>
+                                    <h3 class="contactFTitle">Contact form</h3>
+                                </legend>
+                                <div class="flex_spacebetween">
+                                    <div class="formFill formFill-name">
+                                        <label class="form-label" for="name">
+                                            <span>Name</span>
+                                            <span class="validIcon validIcon-name" data-visible="false">
+                                                <i class="fa-solid fa-circle-check" style="color: #7da87b;"></i>
+                                            </span>
+                                        </label>
+                                        <input class="form-input" type="text" id="name" name="name"
+                                            placeholder="Your name">
+                                        <div id="name-error" class="formError">Please enter your name. Minimum 5
+                                            characters.
+                                        </div>
+                                    </div>
 
-                            <div class="formFill formFill-email">
-                                <label class="form-label" for="email">
-                                    <span>E-mail</span>
-                                    <span class="validIcon validIcon-email" data-visible="false">
-                                        <i class="fa-solid fa-circle-check" style="color: #7da87b;"></i>
-                                    </span>
-                                </label>
-                                <input class="form-input" type="email" id="email" name="email" placeholder="E-mail">
-                                <div class="formError" id="email-error">Please enter a valid e-mail.</div>
-                            </div>
+                                    <div class="formFill formFill-email">
+                                        <label class="form-label" for="email">
+                                            <span>E-mail</span>
+                                            <span class="validIcon validIcon-email" data-visible="false">
+                                                <i class="fa-solid fa-circle-check" style="color: #7da87b;"></i>
+                                            </span>
+                                        </label>
+                                        <input class="form-input" type="email" id="email" name="email"
+                                            placeholder="E-mail">
+                                        <div class="formError" id="email-error">Please enter a valid e-mail.</div>
+                                    </div>
 
-                            <div class="formFill formFill-subject">
-                                <label class="form-label" for="subject">
-                                    <span>Subject</span>
-                                    <span class="validIcon validIcon-subject" data-visible="false">
-                                        <i class="fa-solid fa-circle-check" style="color: #7da87b;"></i>
-                                    </span>
-                                </label>
-                                <input class="form-input" type="text" id="subject" name="subject" placeholder="Subject">
-                                <div class="formError" id="subject-error">Please enter a subject. More than 15
-                                    characters.
+                                    <div class="formFill formFill-subject">
+                                        <label class="form-label" for="subject">
+                                            <span>Subject</span>
+                                            <span class="validIcon validIcon-subject" data-visible="false">
+                                                <i class="fa-solid fa-circle-check" style="color: #7da87b;"></i>
+                                            </span>
+                                        </label>
+                                        <input class="form-input" type="text" id="subject" name="subject"
+                                            placeholder="Subject">
+                                        <div class="formError" id="subject-error">Please enter a subject. More than 15
+                                            characters.
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="formFill formFill-message">
-                                <label class="form-label" for="message">
-                                    <span>Message</span>
-                                    <span class="validIcon validIcon-message" data-visible="false">
-                                        <i class="fa-solid fa-circle-check" style="color: #7da87b;"></i>
-                                    </span>
-                                </label>
-                                <textarea class="form-textarea" id="message" name="message" rows="10"
-                                    placeholder="Type your message.." title="Message input"></textarea>
-                                <div class="formError" id="message-error">Your message must be minimum 25 characters
-                                    long.
+                                <div class="formFill formFill-message">
+                                    <label class="form-label" for="message">
+                                        <span>Message</span>
+                                        <span class="validIcon validIcon-message" data-visible="false">
+                                            <i class="fa-solid fa-circle-check" style="color: #7da87b;"></i>
+                                        </span>
+                                    </label>
+                                    <textarea class="form-textarea" id="message" name="message" rows="8"
+                                        placeholder="Type your message.." title="Message input"></textarea>
+                                    <div class="formError" id="message-error">Your message must be minimum 25 characters
+                                        long.
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="sendButtonArea">
-                                <button class="sendButton">Send message</button>
-                            </div>
-                        </fieldset>
-                    </form>
-                    <div class="sendMessageContainer">
-                        <div class="sendMessageSuccess">
-                            <div>
-                                <h3 class="SMTitle">Your message was sent.</h3>
-                                <p class="SMMessage">Thank you for showing interest. I will be in contact with you
-                                    shortly.</p>
+                                <div class="sendButtonArea">
+                                    <button class="sendButton">Send message</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <div class="sendMessageContainer">
+                            <div class="sendMessageSuccess">
+                                <div>
+                                    <h3 class="SMTitle">Your message was sent.</h3>
+                                    <p class="SMMessage">Thank you for showing interest. I will be in contact with you
+                                        shortly.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -157,9 +186,9 @@
             </div>
         </section>
         <section id="mySkills" class="padding2remTB">
-            <div class="content_wrap hiddenElement">
-                <h2 class="sectionTitle">My Skills</h2>
-                <div id="skillsContainer">
+            <div class="content_wrap">
+                <h2 class="sectionTitle">Knowledge</h2>
+                <div id="skillsContainer" class="hiddenElement">
                     <div class="loaderArea">
                         <div class="loader"></div>
                     </div>
@@ -171,7 +200,7 @@
         <div class="flexcenter height-fit-content ">
             <p>Portfolio</p>
             <a class="footer_logo" href="/index.html">
-                <img class="logo_site" src="/img/logo_portfolio.png" alt="Logo of a button">
+                <img class="logo_site" src="/img/logo_portfolio.png" alt="Site logo">
             </a>
         </div>
     </footer>
