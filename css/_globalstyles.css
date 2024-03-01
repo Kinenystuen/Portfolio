@@ -216,6 +216,10 @@ button {
     height: 3.4rem;
     width: 3rem;
 }
+.logo_site.downsize {
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
 
 .logo-area_title {
     text-transform: uppercase;
@@ -226,8 +230,11 @@ button {
     text-align: center;
     text-wrap: wrap;
     padding: 0.5rem 0.8rem;
+    margin: 1rem 0;
 }
-
+.logo-area_title.margin0 {
+    margin: 0;
+}
 
 .contactMe {
     margin: 2rem 0;

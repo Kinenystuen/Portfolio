@@ -1,4 +1,7 @@
 const headerHome = document.querySelector(".headerHome");
+const logoSite = document.querySelector(".logo_site");
+const logoArea = document.querySelector(".logo-area_title");
+const navMenu = document.querySelector(".nav-menu-ul");
 
 // Add scroll event listener
 export function scrollheader() {
@@ -7,8 +10,14 @@ export function scrollheader() {
         // Check if scrollPosition is greater than 0
         if (scrollPosition > 0) {
             headerHome.classList.add("visible");
+            logoSite.classList.add("downsize");
+            logoArea.classList.add("margin0");
+            navMenu.classList.add("margin0");
         } else {
             headerHome.classList.remove("visible");
+            logoSite.classList.remove("downsize");
+            logoArea.classList.remove("margin0");
+            navMenu.classList.remove("margin0");
         }
     });
 }
